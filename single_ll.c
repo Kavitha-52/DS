@@ -9,7 +9,7 @@ typedef struct stu
 
 
 
-void insert(S **head,int data)
+void insert(S *head,int data)
 {
 	S *temp=NULL;
 	S *new=malloc(sizeof(S));
@@ -19,13 +19,13 @@ void insert(S **head,int data)
 	{
 		new->data=data;
 		new->next=NULL;
-		if(*head==NULL)
+		if(head==NULL)
 		{
-			*head=new;
+			head=new;
 		}
 		else
 		{
-			temp=*head;
+			temp=head;
 			while(temp->next != NULL)
 			{
 				temp=temp->next;
@@ -38,11 +38,11 @@ void insert(S **head,int data)
 
 void print(S *head)
 {
-	if(*head==NULL)
+	if(head==NULL)
 		printf("list is empty\n");
 	else
 	{
-		S *temp=*head;
+		S *temp=head;
 		while(temp != NULL)
 		{
 			printf("%d ",temp->data);
@@ -62,9 +62,9 @@ for(i=0;i<size;i++)
 {
 	printf("Enter data:");
 	scanf("%d",&data);
-	insert(&head,data);
+	insert(head,data);
 }
 printf("The data in single linked list:\n");
-print(&head);
+print(head);
 return 0;
 }

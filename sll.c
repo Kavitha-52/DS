@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -51,34 +52,10 @@ void print(S *ptr)
 		printf("\n");
 	}
 }
-S *reverse(S *ptr)
-{
-S *prev=NULL;
-S *cur=NULL;
-S *next=NULL;
-
-if(ptr==NULL)
-printf("List is empty\n");
-else if(ptr->link==NULL)
-printf("list has only 1 element\n");
-else
-{
-next=ptr;
-while(next)
-{
-prev=cur;
-cur=next;
-next=next->link;
-cur->link=prev;
-}
-ptr=cur;
-}
-return ptr;
-
-}
 
 
 
+/*
 int main()
 {
 int i,data,size;
@@ -90,16 +67,12 @@ for(i=0;i<size;i++)
 	scanf("%d",&data);
 	insert(data);
 }
-printf("Before reverse the linked list:\n");
-print(head);
-head=reverse(head);
-printf("After reverse the linked list:\n");
-print(head);
+
 return 0;
 }
 
 
-/*
+*/
 int main()
 {  
        int size,i,data,choice;
@@ -132,4 +105,4 @@ int main()
 		}
 		
 	}
-}*/
+}
