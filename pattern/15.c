@@ -1,12 +1,14 @@
 #include<stdio.h>
 int main()
 {
-        int i,j;
+        int i,j,k;
         for(i=1;i<=5;i++)
         {
+		k=97+i;
                 for(j=1;j<=i;j++)
-                {
-                        printf("%d",i);
+		{ 
+			k--;
+                        printf("%c ",k);
                 }
                 printf("\n");
         }
@@ -17,13 +19,9 @@ int main()
 
 output:
 
-1
-22
-333
-4444
-55555
-
-
+a 
+b a 
+c b a 
+d c b a 
+e d c b a 
 */
-
-

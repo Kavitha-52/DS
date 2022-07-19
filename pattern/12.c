@@ -2,28 +2,23 @@
 int main()
 {
         int i,j;
-        for(i=5;i>=1;i--)
+        for(i=1;i<=5;i++)
         {
-                for(j=5;j>=i;j--)
+                for(j=1;j<=i;j++)
+
                 {
-                        printf("%d",i);
+                        printf("%c",96+i);
                 }
                 printf("\n");
         }
         return 0;
 }
 /*
- 
-
 output:
-
-5
-44
-333
-2222
-11111
-
+a
+bb
+ccc
+dddd
+eeeee
 */
-
-
 

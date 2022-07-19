@@ -1,12 +1,13 @@
 #include<stdio.h>
 int main()
 {
-        int i,j;
+        int i,j,no=0;
         for(i=1;i<=5;i++)
         {
                 for(j=1;j<=i;j++)
                 {
-                        printf("%d",i);
+                        no++;
+                        printf("%d ",no*no);
                 }
                 printf("\n");
         }
@@ -16,14 +17,9 @@ int main()
 /*
 
 output:
-
 1
-22
-333
-4444
-55555
-
-
+4 9
+16 25 36
+49 64 81 100
+121 144 169 196 225
 */
-
-
